@@ -1,0 +1,197 @@
+/**
+    * Default template Dedalow
+*/
+
+:root {
+  --primary: #545FFD;
+  --primary-variant: #020eb6;
+  --primary-variant-surface:#2230fc;
+  --secondary: #fff;
+  --secondary-variant: #cccccc;
+  --surface: #23293b;
+  --danger: #da4442;
+  --success: #73a836;
+  --warning: #e6ac00;
+}
+
+/**
+  * Auxiliary classes
+*/
+
+.inline-block {
+  display: inline-block;
+}
+
+.pt20 {
+  padding-top: 1.25rem;
+}
+
+.block {
+  display: block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.default-text-primary {
+  color: var(--primary)
+}
+
+.default-text-secondary {
+  color: var(--secondary);
+}
+
+.default-text-primary-variant {
+  color: var(--primary-variant)
+}
+
+.default-text-surface {
+  color:var(--surface);
+}
+
+.default-text-success {
+  color: var(--success)
+}
+
+.default-text-warning {
+  color: var(--warning)
+}
+
+.default-text-danger {
+  color: var(--danger)
+}
+
+
+/**
+  * Custom buttons
+*/
+.btn {
+  width: auto;
+  margin: 0 auto;
+  display: inline;
+  border-color: lightgrey;
+}
+
+button.btn-default {
+  color: var(--primary);
+  background-color: var(--secondary);
+  border-color: var(--primary);
+  border-radius: 16.5px;
+}
+
+button.btn-default:focus,
+button.btn-default.focus {
+  color: var(--primary-variant);
+  background-color: var(--secondary);
+  border-color: var(--primary-variant);
+}
+
+button.btn-default:hover {
+  color: var(--primary-variant);
+  background-color: (var(--secondary));
+  border-color: #1826fc;
+}
+
+button.btn-primary {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-color: #3b47fd;
+  border-radius: 16.5px;
+}
+
+button.btn-primary:hover,
+button.btn-primary:focus,
+button.btn-primary.focus {
+  border-color:#020eb6;
+  background-color:var(--primary-variant);
+}
+
+button.btn-default:disabled,
+button.btn-default.disabled,
+button.btn-primary:disabled,
+button.btn-primary.disabled {
+  color: var(--surface);
+  background-color: var(--secondary);
+  border-color: var(--secondary-variant);
+}
+
+/**
+  * Custom paragraphs - textBlock
+*/
+p {  
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-size: 0.75em;
+}
+
+p.h1 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+p.h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p.h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+p.h5 {
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+
+/**
+  * Custom Link
+*/
+a.btn-link {
+  color: var(--primary);
+  font-weight: normal;
+  border-radius: 0;
+}
+
+a.btn-link,
+a.btn-link:active,
+a.btn-link.active,
+a.btn-link[disabled] {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a.btn-link,
+a.btn-link:hover,
+a.btn-link:focus,
+a.btn-link:active {
+  border-color: transparent;
+}
+
+a.btn-link:hover,
+a.btn-link:focus {
+  color: #0818fc;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/**
+  * Default input - textBox
+*/
+input.default {
+  width: 100%;
+  display: block;
+}
+
+/**
+  * Default table
+*/
+table.default thead tr th {
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 0;
+}
